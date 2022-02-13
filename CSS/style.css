@@ -1,0 +1,364 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Montserrat:wght@300&display=swap');
+
+
+
+body {
+  background-color: white;
+}
+
+
+  /* .headernav h1 span {
+    display: inline-block;
+    transform: scaleX(-1);
+    color: var(--off-color);
+  } */
+
+  .nav {
+    text-decoration: none;
+  }
+
+  .headernav > * {
+    margin: 0;
+    
+  }
+  /* @media screen and (min-width: 700px) {
+    .headernav {
+      display: flex;
+      align-items: center;
+      
+    }
+  } */
+  
+  /* STYLE OF "Logo" Text --> LEFT */
+  .headernav h1 {
+    margin-right: auto;
+    font-family: 'Cormorant Garamond', serif;
+    
+  }
+ 
+
+  .logo {
+    max-height: 50px;
+    padding-left: 30px;
+    padding-top: 40px;
+  }
+  
+  
+  /* PRODUCTLIST PAGE*/
+  .productlist main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  /* HEADING 2 */
+  .productlist main h2 {
+    grid-column: 1/-1;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  .productlist article h3 {
+    font-size: 1rem;
+    flex-grow: 3;
+  }
+  .productlist article > * {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  /* Color of Sold Out items */
+  .subtle {
+    color: #d8d8d8cc;
+  }
+  .productlist article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* -34% */
+  :root {
+    --off-color: #d3e5f4;
+    font-family:'Courier New', Courier, monospace;
+  }
+
+
+
+  /* MENU - HOME, CATEGORY, SHOP, PRODUCT */
+  a {
+    font-family: 'Cormorant Garamond', serif;
+    text-decoration: none;
+    color: black;
+   
+  }
+
+  /* NAV ON RIGHT SIDE OF PAGE */
+  nav {
+    text-align: right;
+    
+  }
+
+  /* SOLD OUT */
+  .productlist article.Soldout img {
+    opacity: 0.5;
+  }
+  .productlist article.Soldout::before {
+    content: "Sold Out";
+    position: absolute;
+    background: var(--color);
+    color: var(--background-color);
+    padding: 1rem;
+  }
+
+  /* TEXT STYLING */
+  .price {
+    color: brown;
+    font-family: 'Courier New', Courier, monospace;
+  }
+   .one{
+    font-family: 'Cormorant Garamond', serif;
+   }
+
+   .two{
+    font-family: 'Cormorant Garamond', serif;
+   }
+
+   .three{
+    font-family: 'Cormorant Garamond', serif;
+   }
+
+   .four{
+    font-family: 'Cormorant Garamond', serif;
+   }
+
+   .five{
+    font-family: 'Cormorant Garamond', serif;
+   }
+
+   /* READ MORE */
+   .readmore {
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: black;
+   }
+
+   /* HOVER - READ MORE */
+   .readmore:hover{
+    transform: scale(0.9);
+    animation-fill-mode: forwards;
+}
+ 
+
+  .productlist article .discounted,
+  .productlist article .price span {
+    display: none;
+  }
+  .productlist article.Sale .discounted {
+    display: flex;
+    justify-content: space-between;
+  }
+  .discounted > p {
+    margin-bottom: 0;
+  }
+  .productlist article.Sale .price span {
+    display: initial;
+  }
+  .productlist article button {
+    margin-top: auto;
+  }
+  .productlist article {
+    margin-bottom: 1rem;
+  }
+  .discounted p:last-child {
+    background: var(--off-color);
+    padding: 0.2rem;
+  }
+  
+
+
+
+  /* PRODUCT PAGE */
+
+  /* nav under big nav on PRODUCT PAGE */
+  .smallnav {
+    list-style-type: none;
+    display: flex;
+  }
+  .smallnav li::after {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 10px;
+    content: "";
+    transition: all 0.3s;
+    background-repeat: no-repeat;
+  }
+  .smallnav li:last-child::after {
+    background: none;
+  }
+
+  /* PURCHASEBOX  */
+  .purchaseBox {
+    background: #edf0f2;
+    color: black;
+    padding: 1rem;
+
+  }
+
+  .purchaseBox button {
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+    color: black;
+  }
+  .purchaseBox form label {
+    gap: 1rem;
+  }
+
+  .info {
+    grid-row:3;
+    grid-column: 1;
+    justify-self: left;
+  }
+
+  /* XS/S BOX */
+  .product select {
+    min-width: 60px;
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .addcartbutton {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    
+  }
+
+  /* INFO UNDERNEATH PURCHASEBOX */
+  .info {
+    padding: 1rem;
+  }
+
+  dt {
+    font-weight: 700;
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .productinfo {
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .productname {
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .brand {
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  label {
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  dd {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+  }
+
+  /* GRID - PRODUCT */
+  .product main {
+    display: grid;
+  }
+  .product main .smallnav,
+  .product main img {
+    grid-column: 1/-1;
+  }
+  
+  .productimage {
+    max-height: 600px;
+  }
+  
+  /* MEDIA QUERY - PRODUCT PAGE */
+
+  @media screen and (min-width: 1000px) {
+    .product main {
+      grid-template-columns: 1fr 310px;
+    }
+    .info {
+      order: 0;
+    }
+    .purchaseBox {
+      order: 2;
+      transform: translate(-50px, -100px);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+   /* CATEGORY PAGE */
+
+   /* ABC... Left corner */
+  .htwo {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+
+   .letterLinks ol {
+    margin-top: 1rem;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    font-size: 1rem;
+  
+  }
+  .brandList ol {
+    list-style-type: none;
+  }
+  .brandList li {
+    border-bottom: 1px solid #d8d8d8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  .brandList a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+  }
+  .brandList li::after {
+    display: block;
+    width: 20px;
+    height: 20px;
+    content: "";
+    transition: all 0.3s;
+    /* background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 14"><path fill="none" stroke="white" d="M.8 12.87l7.5-6-7.5-6"></path></svg>'); */
+    background-repeat: no-repeat;
+    /* url('data:image/svg+xml;utf8,<svg class="svg-arrowRight" viewBox="0 0 9 14"><path fill="none" stroke="#979797" d="M.8 12.87l7.5-6-7.5-6"></path></svg>'); */
+  }
+  .brandList li:hover {
+    background: #f4eeed;
+    transition: transform 0.3s;
+  }
+  .brandList li:hover::after {
+    transform: translateX(8px);
+    
+  }
+  
+  /* MEDIA QUERY - CATEGORY PAGE */
+  @media screen and (min-width: 800px) {
+    .brandList ol {
+      column-count: 3;
+    }
+  }
